@@ -4,9 +4,19 @@
   </div>
 </footer>
 
-
+<script type="text/javascript"> 
+$(document).ready( function () { 
+$("#datatable").dataTable({ 
+  "oLanguage": { 
+  "sLengthMenu": "Afficher MENU Enregistrements", 
+  "sSearch": "Rechercher:", 
+  "sInfo":"Total de TOTAL enregistrements (_END_ / _TOTAL_)", 
+  "oPaginate": { "sNext": "Suivant", "sPrevious":"Précédent"}}})}); </script>
     <script src="js/bootstrap.min.js"></script>
 
       
   </body>
 </html>
+
+
+

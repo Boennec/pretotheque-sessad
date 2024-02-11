@@ -26,7 +26,9 @@
 <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
 <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
 <meta name="theme-color" content="#7952b3">
-
+<link rel="stylesheet" href="../DataTables/datatables.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../DataTables/datatables.js"></script>
 
     <style>
       .bd-placeholder-img {
@@ -53,28 +55,28 @@
   <!-- Fixed navbar -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Application reservations</a>
+      <a class="navbar-brand" href="../index.php">Application reservations</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            <a class="nav-link <?php echo !empty($index)? "active":"" ?>" aria-current="page" href="../index.php">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="articles.php">articles</a>
+            <a class="nav-link <?php echo !empty($article)? "active":"" ?>" href="articles.php">articles</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../partenaire.php">partenaires</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="../reservation.php">réservations</a>
+            <a class="nav-link <?php echo !empty($partenaire)? "active":"" ?>" href="../partenaire.php">partenaires</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="../charte.php" >charte</a>
+            <a class="nav-link <?php echo !empty($reservation)? "active":"" ?>" href="../reservation.php">réservations</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link <?php echo !empty($charte)? "active":"" ?>" href="../charte.php" >charte</a>
           </li>
         </ul>
         <form class="d-flex">
