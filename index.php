@@ -1,14 +1,12 @@
 
     
 <?php
-include_once("header.php");
 $index=true;
+include_once("header.php");
+include_once("main.php");
 
 ?>
 
-<!-- Begin page content -->
-<main class="flex-shrink-0">
-  <div class="container">
     <h1 class="mt-5">Accueil</h1>
   </div>
 </main>

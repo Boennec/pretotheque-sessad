@@ -17,3 +17,7 @@ organiser les pages en blocs pour séparer les éléments avec la fonction php i
 
 Rendre les liens actifs sur la navbar
 Intégrer  la datatable jquery, pour afficher les données correctement
+
+Sur la page partenaires, créer le tableau thead - tr td et faire une boucle while() pour afficher le contenu du tableau.
+Créer avec bootstrap dans 2 nouvelles colonnes du tableau, les boutons modifier , supprimer.
+Créer au dessus du tableau un bouton nouveau partenaire

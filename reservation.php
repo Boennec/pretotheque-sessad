@@ -1,14 +1,14 @@
 
     
 <?php
-include_once("header.php");
 $reservation=true;
+include_once("header.php");
+include_once("main.php");
 
 ?>
 
 <!-- Begin page content -->
-<main class="flex-shrink-0">
-  <div class="container">
+
     <h1 class="mt-5">Réservations</h1>
     <table id="datatable" class="display">
     <thead>

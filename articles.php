@@ -1,15 +1,26 @@
 
     
 <?php
-include_once("header.php");
 $article=true;
+include_once("header.php");
+include_once("main.php");
 
 ?>
 
-<!-- Begin page content -->
-<main class="flex-shrink-0">
-  <div class="container">
+
     <h1 class="mt-5">Articles</h1>
+
+
+    <?php
+        $query = "SELECT * FROM articles";
+        $pdostmt=$pdo->prepare($query);
+        $pdostmt->execute();
+        //var_dump($pdostmt->fetchAll(PDO::FETCH_ASSOC));
+
+
+?>
+
+
     <table id="datatable" class="display">
     <thead>
         <tr>
