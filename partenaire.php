@@ -70,7 +70,7 @@ $count=0;
             <td><?php echo $ligne["structurePartenaire"]?></td>
             <td><?php echo $ligne["groupePartenaire"]?></td>
             <td>
-                <a href="" class="btn btn-success">
+                <a href="modifPartenaire.php?id=<?php echo $ligne["id"]?>" class="btn btn-success">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill"
                     viewBox="0 0 16 16">
                     <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0
